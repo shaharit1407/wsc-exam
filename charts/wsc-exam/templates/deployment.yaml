@@ -41,6 +41,6 @@ spec:
             - name: LABEL
               value: "{{ .Values.env.LABEL_SELECTOR }}"
             - name: POD_NAMESPACE
-              value: "{{ .Values.env.POD_NAMESPACE }}"
+              value: "{{  .Values.env.POD_NAMESPACE }}"
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
