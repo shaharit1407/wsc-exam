@@ -15,6 +15,7 @@ fullnameOverride: "service-a"
 
 env:
   LABEL_SELECTOR: "app=service-b"
+  POD_NAMESPACE: "monitoring"
 
 serviceAccount:
   # Specifies whether a service account should be created
